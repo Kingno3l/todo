@@ -53,4 +53,3 @@ btnClearCompleted.addEventListener('click', (e) => {
   tasksList = getData();
   display(tasksList);
 });
-
