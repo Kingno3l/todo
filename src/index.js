@@ -1,45 +1,42 @@
 import './style.css';
+import { Task, getData, saveData } from './task.js';
+import UI from './ui.js';
+import display from './display.js';
 
-const dataToDoList = [
-  {
-    description: 'Jumping',
-    completed: true,
-    index: 0,
-  },
-  {
-    description: 'Running',
-    completed: true,
-    index: 1,
-  },
-  {
-    description: 'Eating',
-    completed: true,
-    index: 2,
-  },
-  {
-    description: 'Drinking',
-    completed: false,
-    index: 3,
-  },
-  {
-    description: 'Sleeping',
-    completed: true,
-    index: 4,
-  },
-];
-function populateList(tasks) {
-  const containerList = document.querySelector('.todo');
-  let listHTML = '';
-  tasks.forEach((task) => {
-    listHTML += `
-      <li class="list-to-do">
-        <input type="checkbox" class="to-do">
-        ${task.description}
-        <i class="fa-solid fa-trash"></i>
-      </li>
-      <hr class="line">
-    `;
-  });
-  containerList.innerHTML = listHTML;
+let tasksList;
+if (getData() === null) {
+  tasksList = [];
+} else {
+  tasksList = getData();
 }
-populateList(dataToDoList);
+
+const addTask = (newTask) => {
+  let index;
+  if (getData() === null) {
+    index = 1;
+  } else {
+    tasksList = getData();
+    index = tasksList.length + 1;
+  }
+  const task = new Task(newTask, index, false);
+  tasksList.push(task);
+  saveData(tasksList);
+  display(tasksList);
+};
+
+const addNewTask = document.querySelector('#add-new-task');
+addNewTask.addEventListener('keyup', (e) => {
+  if (e.keyCode === 13 && addNewTask.value !== '') {
+    const newTask = addNewTask.value;
+    addTask(newTask);
+    document.querySelector('#add-new-task').value = '';
+  }
+});
+
+display(tasksList);
+
+const btnRefresh = document.querySelector('#btn-refresh');
+btnRefresh.addEventListener('click', () => {
+  window.location.reload();
+  UI.reloadPage();
+});
