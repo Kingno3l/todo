@@ -1,5 +1,4 @@
 import './style.css';
-
 /* eslint-disable no-restricted-syntax */
 const dataToDoList = [
   {
@@ -28,18 +27,19 @@ const dataToDoList = [
     index: 4,
   },
 ];
-
-dataToDoList.forEach((n) => {
-  const output = n.description;
-
-  const containerList = document.getElementById('list-container');
-
-  containerList.innerHTML += `
+function populateList(tasks) {
+  const containerList = document.querySelector('.todo');
+  let listHTML = '';
+  tasks.forEach((task) => {
+    listHTML += `
       <li class="list-to-do">
-      <input type="checkbox" class="to-do">
-        ${output}
+        <input type="checkbox" class="to-do">
+        ${task.description}
         <i class="fa-solid fa-trash"></i>
       </li>
       <hr class="line">
     `;
-});
+  });
+  containerList.innerHTML = listHTML;
+}
+populateList(dataToDoList);
