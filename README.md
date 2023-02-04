@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>TODO List APP</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -29,7 +29,7 @@
 
 # 📖 [todo list app] <a name="about-project"></a>
 
-**[todo list app]** is a simple app that allows you to set a number of tasks and help you track your progress in achieving them.
+**[todo list app]** is an app that enable you manage your task.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,89 +75,13 @@
 
 this project is currently only available for viewing
 
-<!-- ### Prerequisites
-
-In order to run this project you need: -->
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
-<!-- ### Setup
-
-Clone this repository to your desired folder:
- -->
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-<!-- ### Install
-
-Install this project with: -->
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-<!-- ### Usage
-
-To run the project, execute the following command: -->
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-<!-- ### Run tests
-
-To run tests, run the following command: -->
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-<!-- ### Deployment
-
-You can deploy this project using: -->
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Tetteh Kodjo-sarso**
 
-- GitHub: [@Reggeditt](https://github.com/Reggeditt)
-- Twitter: [@tksarso](https://twitter.com/tkSarso)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/tettehKodjoSarso)
+- GitHub: [@Reggeditt](https://github.com/kingno3l)
+- Twitter: [@tksarso](https://twitter.com/kingno3l)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/kingno3l)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,19 +117,7 @@ I would like to thank microverse for this challenge.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
