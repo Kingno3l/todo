@@ -67,7 +67,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo is not yet available](https://yourdeployedapplicationlink.com)
+- [Link to live demo](https://kingno3l.github.io/todo/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
