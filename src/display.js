@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/no-cycle
 import UI from './ui.js';
+
 import Status from './status.js';
 
 const display = (tasksList) => {
@@ -33,7 +34,6 @@ const display = (tasksList) => {
       UI.removeTask(e.target, btn, index);
     });
   });
-
   const taskInput = document.querySelectorAll('#task');
   taskInput.forEach((task, index) => {
     task.addEventListener('keyup', (e) => {

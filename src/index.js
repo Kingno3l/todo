@@ -19,7 +19,9 @@ const addTask = (newTask) => {
     tasksList = getData();
     index = tasksList.length + 1;
   }
+
   const task = new Task(newTask, false, index);
+
   tasksList.push(task);
   saveData(tasksList);
   display(tasksList);
@@ -41,6 +43,7 @@ btnRefresh.addEventListener('click', () => {
   window.location.reload();
   UI.reloadPage();
 });
+
 const btnClearCompleted = document.querySelector('.btn-clear');
 btnClearCompleted.addEventListener('click', (e) => {
   Status.clearAllCompletedTask(e, tasksList);
@@ -50,3 +53,4 @@ btnClearCompleted.addEventListener('click', (e) => {
   tasksList = getData();
   display(tasksList);
 });
+

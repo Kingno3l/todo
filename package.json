@@ -26,6 +26,8 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
     "html-webpack-plugin": "^5.5.0",
     "lodash": "^4.17.21",
     "style-loader": "^3.3.1",
@@ -37,5 +39,8 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },
-  "main": "webpack.config.js"
+  "main": "webpack.config.js",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4"
+  }
 }
