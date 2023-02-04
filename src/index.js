@@ -1,5 +1,4 @@
 import './style.css';
-/* eslint-disable no-restricted-syntax */
 const dataToDoList = [
   {
     description: 'Jumping',
