@@ -29,15 +29,14 @@ const dataToDoList = [
   },
 ];
 
-
 dataToDoList.forEach((n) => {
   const output = n.description;
 
   const containerList = document.getElementById('list-container');
 
-containerList.innerHTML += `
+  containerList.innerHTML += `
       <li class="list-to-do">
-        <input type="checkbox" class="to-do">
+      <input type="checkbox" class="to-do">
         ${output}
         <i class="fa-solid fa-trash"></i>
       </li>
