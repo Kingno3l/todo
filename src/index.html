@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List Structure</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/e520ead38a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
-</head>
-
-<body>
-    <section class="main">
-        <div class="main-container">
-            <ul id="list-container">
-                <li>Today's To Do <i class="fa-solid fa-arrows-rotate"></i></li>
-                <hr>
-                <li><input type="text" class="list-add" placeholder="Add your list..."> <i class="fa-solid fa-arrow-turn-down"></i></li>
-                <hr>
-            </ul>
-            <ul class="clear-list">
-                <li>Clear all completed</li>
-            </ul>
-        </div>
-    </section></body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f5f70a395d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+    href="https://fonts.googleapis.com/css?family=Poppins"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="article">
+            <h1>To Do List</h1>
+            <i class="fa-solid fa-rotate" id="btn-refresh"></i>
+            <input
+              type="text"
+              placeholder="Add to your list"
+              id="add-new-task"
+              required
+            />
+          </div>
+          <ul class="todo-list"></ul>
+          <button class="btn btn-clear" type="button">
+            Clear All Completed Tasks
+          </button>
+      </div>
+    </main>
+    
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
