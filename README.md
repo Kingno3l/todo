@@ -79,8 +79,8 @@ this project is currently only available for viewing
 
 👤 **Tetteh Kodjo-sarso**
 
-- GitHub: [@Reggeditt](https://github.com/kingno3l)
-- Twitter: [@tksarso](https://twitter.com/kingno3l)
+- GitHub: [@Kingno3l](https://github.com/kingno3l)
+- Twitter: [@Kingno3l](https://twitter.com/kingno3l)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kingno3l)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
