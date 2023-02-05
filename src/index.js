@@ -18,7 +18,7 @@ const addTask = (newTask) => {
     tasksList = getData();
     index = tasksList.length + 1;
   }
-  const task = new Task(newTask, false, index);
+  const task = new Task(newTask, index, false);
   tasksList.push(task);
   saveData(tasksList);
   display(tasksList);
