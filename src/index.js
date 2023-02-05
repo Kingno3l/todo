@@ -1,32 +1,28 @@
 import './style.css';
-import Task from './task.js';
-import LocalStorage from './localstorage.js';
-import UI from './UI.js';
-import Status from './Status.js';
+import { Task, getData, saveData } from './task.js';
+import UI from './ui.js';
+import display from './display.js';
+import Status from './status.js';
 
 let tasksList;
-if (LocalStorage.getData() === null) {
+if (getData() === null) {
   tasksList = [];
 } else {
-  tasksList = LocalStorage.getData();
+  tasksList = getData();
 }
 
 const addTask = (newTask) => {
   let index;
-  if (LocalStorage.getData() === null) {
+  if (getData() === null) {
     index = 1;
   } else {
-    tasksList = LocalStorage.getData();
+    tasksList = getData();
     index = tasksList.length + 1;
   }
   const task = new Task(newTask, false, index);
   tasksList.push(task);
-  LocalStorage.saveData(tasksList);
-  UI.showAllTasks(tasksList);
-};
-
-const clearInput = () => {
-  document.querySelector('#add-new-task').value = '';
+  saveData(tasksList);
+  display(tasksList);
 };
 
 const addNewTask = document.querySelector('#add-new-task');
@@ -34,24 +30,23 @@ addNewTask.addEventListener('keyup', (e) => {
   if (e.keyCode === 13 && addNewTask.value !== '') {
     const newTask = addNewTask.value;
     addTask(newTask);
-    clearInput();
+    document.querySelector('#add-new-task').value = '';
   }
 });
 
-UI.showAllTasks(tasksList);
+display(tasksList);
 
 const btnRefresh = document.querySelector('#btn-refresh');
 btnRefresh.addEventListener('click', () => {
   window.location.reload();
   UI.reloadPage();
 });
-
 const btnClearCompleted = document.querySelector('.btn-clear');
 btnClearCompleted.addEventListener('click', (e) => {
   Status.clearAllCompletedTask(e, tasksList);
-  tasksList = LocalStorage.getData();
+  tasksList = getData();
   UI.updateIndex(tasksList);
-  LocalStorage.saveData(tasksList);
-  tasksList = LocalStorage.getData();
-  UI.showAllTasks(tasksList);
+  saveData(tasksList);
+  tasksList = getData();
+  display(tasksList);
 });

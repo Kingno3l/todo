@@ -1,4 +1,4 @@
-import LocalStorage from './localstorage.js';
+import { getData, saveData } from './task.js';
 
 export default class Status {
   static statusChanged(checkBox, index, target, tasksList) {
@@ -13,12 +13,12 @@ export default class Status {
       tasksList[index].completed = false;
     }
 
-    LocalStorage.saveData(tasksList);
+    saveData(tasksList);
   }
 
   static clearAllCompletedTask(e, tasksList) {
-    tasksList = LocalStorage.getData();
+    tasksList = getData();
     tasksList = tasksList.filter((task) => task.completed === false);
-    LocalStorage.saveData(tasksList);
+    saveData(tasksList);
   }
 }
