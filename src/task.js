@@ -1,15 +1,13 @@
 export class Task {
-    constructor(description, completed = false, index) {
-      this.description = description;
-      this.completed = completed;
-      this.index = index;
-    }
+  constructor(description, index, completed = false) {
+    this.description = description;
+    this.completed = completed;
+    this.index = index;
+  }
 }
 
-export const getData=()=>{
-  return JSON.parse(localStorage.getItem('taskslist'));
-}
+export const getData = () => JSON.parse(localStorage.getItem('taskslist'));
 
-export const saveData=(tasksList)=> {
-    localStorage.setItem('taskslist', JSON.stringify(tasksList));
-}
+export const saveData = (tasksList) => {
+  localStorage.setItem('taskslist', JSON.stringify(tasksList));
+};

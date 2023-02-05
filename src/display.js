@@ -1,5 +1,7 @@
-import UI from './UI.js';
-const display = (tasksList)=>{
+// eslint-disable-next-line import/no-cycle
+import UI from './ui.js';
+
+const display = (tasksList) => {
   const todoList = document.querySelector('.todo-list');
   let tasks = '';
 
@@ -19,6 +21,6 @@ const display = (tasksList)=>{
       UI.removeTask(e.target, btn, index);
     });
   });
-}
+};
 
 export default display;

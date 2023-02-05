@@ -1,6 +1,6 @@
 import './style.css';
-import {Task, getData, saveData} from './task.js';
-import UI from './UI.js';
+import { Task, getData, saveData } from './task.js';
+import UI from './ui.js';
 import display from './display.js';
 
 let tasksList;
@@ -23,7 +23,6 @@ const addTask = (newTask) => {
   saveData(tasksList);
   display(tasksList);
 };
-
 
 const addNewTask = document.querySelector('#add-new-task');
 addNewTask.addEventListener('keyup', (e) => {

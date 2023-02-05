@@ -1,4 +1,5 @@
-import {getData, saveData} from './task.js';
+import { getData, saveData } from './task.js';
+// eslint-disable-next-line import/no-cycle
 import display from './display.js';
 
 export default class UI {
@@ -33,6 +34,4 @@ export default class UI {
     });
     saveData(tasksList);
   }
-
-
 }
