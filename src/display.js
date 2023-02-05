@@ -13,7 +13,9 @@ const display = (tasksList) => {
       strike = 'strike';
       checked = 'checked';
     } else {
+      // eslint-disable-next-line no-unused-vars
       strike = '';
+      // eslint-disable-next-line no-unused-vars
       checked = '';
     }
     tasks += `<li class="todo-item">
