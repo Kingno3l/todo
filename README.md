@@ -77,7 +77,7 @@ this project is currently only available for viewing
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Tetteh Kodjo-sarso**
+👤 **King Immanuel**
 
 - GitHub: [@Kingno3l](https://github.com/kingno3l)
 - Twitter: [@Kingno3l](https://twitter.com/kingno3l)
